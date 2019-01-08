@@ -28,6 +28,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textColor="#ffffff"
+            android:backgroundTint="#000000"
             />
 
     </LinearLayout>
