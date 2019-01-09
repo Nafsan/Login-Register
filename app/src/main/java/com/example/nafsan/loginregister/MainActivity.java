@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         passwordEditText = findViewById(R.id.passwordId);
 
         databaseHelper = new DatabaseHelper(this);
-        //SQLiteDatabase sqLiteDatabase=databaseHelper.getWritableDatabase();
+        SQLiteDatabase sqLiteDatabase=databaseHelper.getWritableDatabase();
 
         signInButton.setOnClickListener(this);
         signUpButton.setOnClickListener(this);
