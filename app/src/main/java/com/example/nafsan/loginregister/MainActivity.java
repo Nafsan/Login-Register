@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         }
-        else{
+        else if(v.getId()==R.id.signUpButtonId){
             Intent intent=new Intent(MainActivity.this,signUpActivity.class);
             startActivity(intent);
         }
