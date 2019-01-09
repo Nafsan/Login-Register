@@ -21,7 +21,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private Context context;
     private static final  String DROP_TABLE= "DROP TABLE IF EXISTS "+TABLE_NAME;
 
-
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION_NUMBER);
         this.context=context;
