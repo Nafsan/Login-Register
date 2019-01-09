@@ -44,7 +44,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL(DROP_TABLE);
         try{
-            db.execSQL(CREATE_TABLE);
+            onCreate(db);
             Toast.makeText(context,"On Upgrade is called",Toast.LENGTH_LONG).show();
         }
         catch (Exception e)
