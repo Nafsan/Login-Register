@@ -15,12 +15,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String EMAIL= "Email";
     private static final String USER_NAME= "user name";
     private static final String PASSWORD= "Password";
-    private static final int VERSION_NUMBER= 2;
+    private static final int VERSION_NUMBER= 3;
     private static final String CREATE_TABLE= "CREATE TABLE "+TABLE_NAME+"("+ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"+NAME+" VARCHAR(255) NOT NULL,"+EMAIL+" TEXT NOT NULL,"+USER_NAME+"TEXT NOT NULL,"+PASSWORD+" TEXT NOT NULL)";
 
     private Context context;
     private static final  String DROP_TABLE= "DROP TABLE IF EXISTS "+TABLE_NAME;
-
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION_NUMBER);
@@ -87,7 +86,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 }
             }
         }
-
 
         return  result;
     }

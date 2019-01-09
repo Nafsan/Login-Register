@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         passwordEditText = findViewById(R.id.passwordId);
 
         databaseHelper = new DatabaseHelper(this);
-        //SQLiteDatabase sqLiteDatabase=databaseHelper.getWritableDatabase();
+        SQLiteDatabase sqLiteDatabase=databaseHelper.getWritableDatabase();
 
         signInButton.setOnClickListener(this);
         signUpButton.setOnClickListener(this);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         }
-        else{
+        else if(v.getId()==R.id.signUpButtonId){
             Intent intent=new Intent(MainActivity.this,signUpActivity.class);
             startActivity(intent);
         }

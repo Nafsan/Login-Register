@@ -9,28 +9,56 @@
     android:background="#778496"
     tools:context=".signUpActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nameSignUpId"
         android:textStyle="normal"
         android:textSize="20sp"
-        android:hint="name"
         />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/emailSignUpId"
         android:textSize="20sp"
-        android:hint="Email Address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:hint="Username"
         android:id="@+id/usernameSignUpId"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passsword"
+        android:textStyle="bold"
+        android:textSize="22sp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -38,7 +66,7 @@
         android:inputType="textPassword"
         android:id="@+id/passwordSignUpId"
         android:textSize="20sp"
-        android:hint="Password"
+        android:textColor="#ffffff"
         />
     <Button
         android:layout_width="wrap_content"

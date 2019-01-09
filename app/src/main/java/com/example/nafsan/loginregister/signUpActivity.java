@@ -21,8 +21,8 @@ public class signUpActivity extends AppCompatActivity implements View.OnClickLis
 
         nameEditText=findViewById(R.id.nameSignUpId);
         emailEditText=findViewById(R.id.emailSignUpId);
-        passwordEditText=findViewById(R.id.passwordSignUpId);
         usernameEditText=findViewById(R.id.usernameSignUpId);
+        passwordEditText=findViewById(R.id.passwordSignUpId);
 
         databaseHelper=new DatabaseHelper(this);
         signUp=findViewById(R.id.signUpSignUpButtonId);
@@ -34,13 +34,13 @@ public class signUpActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         String name= nameEditText.getText().toString();
         String email= emailEditText.getText().toString();
-        String password= passwordEditText.getText().toString();
         String username= usernameEditText.getText().toString();
+        String password= passwordEditText.getText().toString();
 
         userDetails.setName(name);
         userDetails.setEmail(email);
-        userDetails.setPassword(password);
         userDetails.setUsername(username);
+        userDetails.setPassword(password);
 
         long rowId= databaseHelper.insertData(userDetails);
 

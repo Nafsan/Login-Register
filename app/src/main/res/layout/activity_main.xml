@@ -41,8 +41,9 @@
             android:textColor="#ffffff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="Password: "
             android:layout_marginLeft="5dp"
+
             />
         <EditText
             android:textSize="20sp"
@@ -51,7 +52,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/passwordId"
             android:inputType="textPassword"
-
+            android:backgroundTint="#000000"
             />
     </LinearLayout>
     <Button
